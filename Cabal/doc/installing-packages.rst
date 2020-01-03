@@ -64,8 +64,9 @@ packages from any of them.
 Using secure repositories
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-For repositories that support the TUF security infrastructure (this
-includes Hackage), you can enable secure access to the repository by
+    Note: For ``hackage.haskell.org``, Cabal always runs in secure mode with a standard root keys, so it is not necessary to specify ``secure`` or ``root-keys``. If no repositories are listed, Cabal will default to ``hackage.haskell.org``.
+
+For repositories that support the TUF security infrastructure you can enable secure access to the repository by
 specifying:
 
 ::
